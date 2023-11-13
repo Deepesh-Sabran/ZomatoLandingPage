@@ -1,3 +1,3 @@
 # Zomato Landing Page
 
-Making it using HTML & CSS only
+Building it using HTML & CSS only
