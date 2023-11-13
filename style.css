@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+
+.headerSecton{
+    background-image: url(/images/heroSectionBackground.png);
+    background-size: cover;
+    min-height: 61vh;
+    background-position: center;
+    scale: 1.09;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navBar{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    margin: 16px;
+    padding-left: 230px;
+    padding-top: 20px;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.navBar_menu{
+    display: flex;
+    gap: 28px;
+    margin-right: 200px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 45px;
+    margin-top: 11px;
+}
+
+.title{
+    color: #fff;
+    margin-top: 23px;
+    font-family: sans-serif;
+    font-weight: 100;
+    scale: 1.15;
+}
+
+.container_input{
+    display: flex;
+    background-color: #fff;
+    width: 42%;
+    padding: 8px;
+    gap: 10px;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+.input_location,.input_search{
+    font-size: 11px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+.input_location{
+    width: 35%;
+    border-right: 1px solid gray;
+    opacity: 0.6;
+}
+
+.input_search{
+    width: 65%;
+}
