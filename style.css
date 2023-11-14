@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .headerSecton{
     background-image: url(/images/heroSectionBackground.png);
     background-size: cover;
@@ -112,6 +116,7 @@
 .cards__we_offer{
     display: flex;
     flex-direction: column;
+    width: 18rem;
     border-radius: 15px;
     border: 1px solid lightgray;
     overflow: hidden;
@@ -120,8 +125,8 @@
 .cards__we_offer img{
     width: 100%;
     height: 130px;
-    scale: 1.1;
     object-fit: cover;
+    object-position: center;
 }
 
 .cards__we_offer:hover{
@@ -130,7 +135,7 @@
 }
 
 .card_heading{
-    padding: 1.2rem;
+    padding: 1.15rem;
 }
 
 .card_heading h2{
@@ -139,9 +144,58 @@
 }
 
 .card_heading p{
-    padding-top: 8px;
-    font-weight: 200;
+    padding-top: 4px;
+    font-weight: 350;
     font-size: 11.9px;
+}
+
+.collections{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.collections h1{
+    margin-right: 735px;
+    font-weight: 417;
+    font-size: 27px;
+}
+
+.collections_subHeading{
+    width: 70%;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.collections_subHeading span:nth-child(2){
+    font-size: 12px;
+    margin-left: 60px;
+    color: red;
+}
+
+i{
+    color: red;
+    opacity: 0.5;
+}
+
+.Collection_card{
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 0.5rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.Collection_card img{
+    width: 217px;
+    border-radius: 8px;
 }
 
 /* screen size 0 - 600 */
@@ -208,13 +262,54 @@
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
     }
 
     .cards__we_offer img{
         width: 100%;
-        height: 180px;
+        height: 179px;
         scale: 1.1;
         object-fit: cover;
+    }
+
+    .card_heading p{
+        padding-top: 8px;
+        font-weight: 300;
+        font-size: 11px;
+        overflow: auto;
+    }
+
+    .collections{
+        width: 90%;
+    }
+
+    .collections h1{
+        font-size: 30px;
+    }
+
+    .collections_subHeading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: -358px;
+        font-size: 14px;
+        font-weight: 200;
+        font-size: 17px;
+    }
+    
+    .collections_subHeading span:nth-child(2){
+        font-size: 15px;
+        margin-left: 60px;
+        color: red;
+    }
+
+    .Collection_card{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .Collection_card img{
+        width: 130px;
+        height: 330px;
     }
 }
