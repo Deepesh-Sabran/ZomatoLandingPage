@@ -195,17 +195,123 @@ i{
 
 .Collection_card img{
     width: 217px;
+    height: 270px;
     border-radius: 8px;
+}
+
+.getTheApp_container{
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: auto;
+    margin-left: 230px;
+}
+
+.getTheApp_img{
+    width: 50%;
+}
+
+.getTheApp_img img{
+    margin-left: 120px;
+    width: 190px;
+    height: 200px;
+}
+
+.getTheApp_from{
+    align-items: center;
+    margin-right: 50px;
+    width: 50%;
+}
+
+.getTheApp_from h1{
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.getTheApp_from p{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.getTheApp_from input{
+    margin-top: 1rem;
+    margin-right: 0.3rem;
+    border: 1.5px solid gray;
+    border-radius: 3px;
+}
+
+input[type='radio']:checked:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    top: -4.5px;
+    right: -2px;
+    position: relative;
+    background-color: rgb(239, 79, 95);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(239, 79, 95);
+}
+
+.getTheApp_from label{
+    margin-right: 2rem;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.getTheApp_from .textField{
+    height: 38px;
+    width: 230px;
+    opacity: 0.6;
+}
+
+.getTheApp_from button{
+    height: 38px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: rgb(239, 79, 95);
+}
+
+.getTheApp_from button:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(203, 56, 56);
+}
+
+.getTheApp_from span{
+    font-weight: 350;
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+.store_logo{
+    display: flex;
+    gap: 1rem;
+}
+
+.store_logo img{
+    margin-top: 0.5rem;
+    width: 110px;
 }
 
 /* screen size 0 - 600 */
 @media only screen and (max-width: 600px) {
+
+    body{
+        overflow-x: hidden;
+    }
     
     .navBar_menu .user_icon{
         display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
+        border-radius: 100%;
+        background-color: #fff;
     }
 
     .link{
@@ -271,6 +377,11 @@ i{
         object-fit: cover;
     }
 
+    .cards__we_offer:hover{
+        transition: all 0.2s ease-in-out;
+        scale: 1.03;
+    }
+
     .card_heading p{
         padding-top: 8px;
         font-weight: 300;
@@ -311,5 +422,53 @@ i{
     .Collection_card img{
         width: 130px;
         height: 330px;
+    }
+
+    .getTheApp_container{
+        margin: 5rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .getTheApp_from h1{
+        font-size: 30px;
+    }
+
+    .getTheApp_from p{
+        margin-top: 1rem;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    input[type='radio']:checked:after {
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        top: -4.2px;
+        right: -2px;
+        position: relative;
+        background-color: rgb(239, 79, 95);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid rgb(239, 79, 95);
+    }
+
+    .getTheApp_from .textField{
+        height: 38px;
+        width: 173px;
+        opacity: 0.6;
+    }
+    
+    .getTheApp_from button{
+        height: 38px;
+        width: 60px;
+        padding: 12px;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        background-color: rgb(239, 79, 95);
     }
 }
