@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .headerSecton{
@@ -11,31 +11,45 @@
     min-height: 61vh;
     background-position: center;
     scale: 1.09;
+    background-color: transparent;
 }
 
-a{
+.navBar a{
     text-decoration: none;
     color: #fff;
 }
 
+.navBar a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 .navBar{
     display: flex;
-    padding: 30px;
     justify-content: space-between;
     margin: 16px;
-    padding-left: 230px;
+    padding-left: 220px;
     padding-top: 20px;
-    font-size: 10px;
-    font-family: sans-serif;
+    font-size: 9px;
+    font-weight: 400;
 }
 
 .navBar_menu{
     display: flex;
     gap: 28px;
     margin-right: 200px;
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: lighter;
+    font-weight: 280;
+    font-size: 12px;
+}
+
+.navBar_menu .user_icon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
 }
 
 .container{
@@ -70,7 +84,7 @@ a{
 }
 
 .input_location,.input_search{
-    font-size: 11px;
+    font-size: 10px;
     border: none;
     padding: 5px;
     outline: none;
@@ -78,10 +92,129 @@ a{
 
 .input_location{
     width: 35%;
-    border-right: 1px solid gray;
-    opacity: 0.6;
+    border-right: 2px solid lightgray;
 }
 
 .input_search{
     width: 65%;
+}
+
+.cards{
+    margin: 3rem auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards__we_offer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.cards__we_offer img{
+    width: 100%;
+    height: 130px;
+    scale: 1.1;
+    object-fit: cover;
+}
+
+.cards__we_offer:hover{
+    transition: all 0.2s ease-in-out;
+    scale: 1.03;
+}
+
+.card_heading{
+    padding: 1.2rem;
+}
+
+.card_heading h2{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card_heading p{
+    padding-top: 8px;
+    font-weight: 200;
+    font-size: 11.9px;
+}
+
+/* screen size 0 - 600 */
+@media only screen and (max-width: 600px) {
+    
+    .navBar_menu .user_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .link{
+        display: none;
+    }
+
+    .headerSecton{
+        display: flex;
+        flex-direction: column;
+        min-height: 58vh;
+    }
+
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+    }
+
+    .navBar_menu{
+        margin-right: 50px;
+    }
+
+    .logo{
+        width: 150px;
+        height: 35px;
+    }
+
+    .title{
+        scale: 1;
+        margin-top: 15px;
+    }
+
+    .container_input{
+        display: flex;
+        width: 79%;
+        border-radius: 20px;
+    }
+
+    .input_location{
+        width: 100%;
+        border-right: none;
+        border-right: 2px solid lightgray;
+        width: 35%;
+    }
+
+    .input_search{
+        width: 65%;
+    }
+
+    .cards{
+        margin: 3rem auto;
+        width: 93%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cards__we_offer img{
+        width: 100%;
+        height: 180px;
+        scale: 1.1;
+        object-fit: cover;
+    }
 }
