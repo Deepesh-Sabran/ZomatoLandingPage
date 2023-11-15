@@ -173,7 +173,7 @@ body{
     width: 100%;
     font-size: 14px;
     font-weight: 200;
-    padding-left: 320px;
+    padding-left: 350px;
 }
 
 .collections_subHeading span:nth-child(2){
@@ -379,7 +379,6 @@ hr{
 /* CSS for Copyright Section */
 .copyright{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 70%;
@@ -497,15 +496,13 @@ hr{
         font-size: 30px;
     }
 
-    .collections_subHeading{
+    .collections .collections_subHeading{
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         width: 100%;
-        margin-left: -358px;
-        font-size: 14px;
-        font-weight: 200;
-        font-size: 17px;
+        padding-left: 0;
+        margin-right: 413px;
     }
     
     .collections_subHeading span:nth-child(2){
@@ -588,7 +585,11 @@ hr{
 
     /* CSS for Copyright Section */
     .copyright p{
-        margin: 2rem 0 2rem 35px;
+        display: flex;
+        margin: 2rem 0;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
     }
 }
 
