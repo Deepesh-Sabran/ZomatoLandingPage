@@ -173,7 +173,7 @@ body{
     width: 100%;
     font-size: 14px;
     font-weight: 200;
-    padding-left: 190px;
+    padding-left: 320px;
 }
 
 .collections_subHeading span:nth-child(2){
@@ -387,7 +387,7 @@ hr{
 
 .copyright p{
     width: 100%;
-    margin: 2rem 220px;
+    margin: 2rem 0 2rem 300px;
     font-size: 11px;
     color: gray;
     font-weight: 300;
@@ -502,7 +502,7 @@ hr{
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-left: -408px;
+        margin-left: -358px;
         font-size: 14px;
         font-weight: 200;
         font-size: 17px;
@@ -510,7 +510,7 @@ hr{
     
     .collections_subHeading span:nth-child(2){
         font-size: 15px;
-        margin-left: 25px;
+        margin-left: 60px;
         color: red;
     }
 
@@ -588,7 +588,7 @@ hr{
 
     /* CSS for Copyright Section */
     .copyright p{
-        margin: 2rem 35px;
+        margin: 2rem 0 2rem 35px;
     }
 }
 
