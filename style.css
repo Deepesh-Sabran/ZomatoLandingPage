@@ -45,7 +45,7 @@ body{
     gap: 28px;
     margin-right: 200px;
     font-weight: 280;
-    font-size: 17px;
+    font-size: 12px;
 }
 
 .navBar_menu .user_icon{
@@ -169,10 +169,11 @@ body{
     font-size: 27px;
 }
 
-.collections_subHeading{
+.collections .collections_subHeading{
     width: 100%;
     font-size: 14px;
     font-weight: 200;
+    padding-left: 190px;
 }
 
 .collections_subHeading span:nth-child(2){
