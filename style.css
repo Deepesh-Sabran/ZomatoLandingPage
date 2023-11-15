@@ -11,7 +11,7 @@ body{
 
 /* CSS for Header Part */
 .headerSecton{
-    background-image: url(/images/heroSectionBackground.png);
+    background-image: url(images/heroSectionBackground.png);
     background-size: cover;
     min-height: 61vh;
     background-position: center;
