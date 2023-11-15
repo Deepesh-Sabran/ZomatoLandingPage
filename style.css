@@ -27,7 +27,6 @@ body{
 
 .navBar a:hover{
     cursor: pointer;
-    text-decoration: underline;
     font-weight: 600;
 }
 
@@ -37,7 +36,7 @@ body{
     margin: 16px;
     padding-left: 220px;
     padding-top: 20px;
-    font-size: 9px;
+    font-size: 13px;
     font-weight: 400;
 }
 
@@ -46,7 +45,7 @@ body{
     gap: 28px;
     margin-right: 200px;
     font-weight: 280;
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .navBar_menu .user_icon{
@@ -171,7 +170,7 @@ body{
 }
 
 .collections_subHeading{
-    width: 70%;
+    width: 100%;
     font-size: 14px;
     font-weight: 200;
 }
@@ -249,20 +248,6 @@ i{
     border-radius: 3px;
 }
 
-input[type='radio']:checked:after {
-    width: 4px;
-    height: 4px;
-    border-radius: 4px;
-    top: -4.5px;
-    right: -2px;
-    position: relative;
-    background-color: rgb(239, 79, 95);
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid rgb(239, 79, 95);
-}
-
 .getTheApp_from label{
     margin-right: 2rem;
     font-weight: 300;
@@ -328,19 +313,6 @@ input[type='radio']:checked:after {
 .sec1_buttons{
     display: flex;
     gap: 1rem;
-}
-
-.sec1_buttons button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    cursor: pointer;
-    padding: 5px;
-    width: 90px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background-color: transparent;
 }
 
 .nav_container{
@@ -409,12 +381,12 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
 }
 
 .copyright p{
     width: 100%;
-    margin: 2rem 190px;
+    margin: 2rem 220px;
     font-size: 11px;
     color: gray;
     font-weight: 300;
@@ -517,7 +489,7 @@ hr{
 
     /* CSS for Collerctions */
     .collections{
-        width: 90%;
+        width: 95%;
     }
 
     .collections h1{
@@ -529,7 +501,7 @@ hr{
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-left: -358px;
+        margin-left: -408px;
         font-size: 14px;
         font-weight: 200;
         font-size: 17px;
@@ -537,7 +509,7 @@ hr{
     
     .collections_subHeading span:nth-child(2){
         font-size: 15px;
-        margin-left: 60px;
+        margin-left: 25px;
         color: red;
     }
 
@@ -557,7 +529,8 @@ hr{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 120%;
+        margin-left: -90px;
     }
 
     .getTheApp_from h1{
@@ -568,20 +541,6 @@ hr{
         margin-top: 1rem;
         font-weight: 200;
         font-size: 15px;
-    }
-
-    input[type='radio']:checked:after {
-        width: 4px;
-        height: 4px;
-        border-radius: 4px;
-        top: -4.2px;
-        right: -2px;
-        position: relative;
-        background-color: rgb(239, 79, 95);
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid rgb(239, 79, 95);
     }
 
     .getTheApp_from .textField{
